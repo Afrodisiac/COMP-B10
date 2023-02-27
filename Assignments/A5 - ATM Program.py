@@ -1,3 +1,4 @@
+'''
 # A5 - ATM Program by Jeremy Stretter
 # COMP B10
 # Professor Moseley
@@ -11,6 +12,7 @@
 #   After each transaction, ask the user if they want to make another transaction.
 #   Make sure you keep track of the amount in each account while the program runs.
 #   Start each account with some $$.
+'''
 
 
 # Starting balances--DO NOT TOUCH!
@@ -32,7 +34,7 @@ print(f"\nHi, {strUser_Name}! It is currently 69° on the West Coast.\n")
 
 # Program
 while True:
-    strUserChoice = input(f"\nWhat would you like to do today, {strUser_Name}?\n\n(T)ransfer funds\n(B)alance inquiry\n(F)ast cash\n(C)ash deposit\n")  # User selects an option
+    strUserChoice = input(f"\nWhat would you like to do today, {strUser_Name}?\n\n(T)ransfer funds\n(B)alance inquiry\n(F)ast cash\n(C)ash deposit\n")
     # User selects Transfer Funds option
     if strUserChoice in ("T", "t"):
         # Confirms which account is being funded
@@ -80,7 +82,7 @@ while True:
                 print("Savings:".ljust(20), str(FLOATSAVBAL).rjust(20))
 
             # If entered amount exceeds available balance, prints error message
-            else: 
+            else:
                 print("Sorry, that amount exceeds the available balance of this account.")
                 continue
         
@@ -148,8 +150,7 @@ while True:
         else:
             print("Thank you for choosing Spark Joint Capital. Have a lifted day!")
             break
-
-    
+  
     # User selects Cash Deposit option
     elif strUserChoice in ("C", "c"):
         # Confirms which account is being deposited into
